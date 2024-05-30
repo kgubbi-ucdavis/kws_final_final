@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project implements a Convolutional Neural Network (CNN) accelerator on an FPGA. The design includes modules for managing weights and inputs, performing multiply-accumulate (MAC) operations, summing results with an adder tree, normalizing data, applying ReLU activation, and performing pooling operations. The project is integrated into a top-level wrapper (`user_project_wrapper`) that interfaces with external pins and a Wishbone bus.
+This project implements a Convolutional Neural Network (CNN) accelerator on an ASIC. The design includes modules for managing weights and inputs, performing multiply-accumulate (MAC) operations, summing results with an adder tree, normalizing data, applying ReLU activation, and performing pooling operations. The project is integrated into a top-level wrapper (`user_project_wrapper`) that interfaces with external pins and a Wishbone bus.
 
 ## Project Structure
 
@@ -60,7 +60,7 @@ This project implements a Convolutional Neural Network (CNN) accelerator on an F
         - `sum_mode` (input): Mode select (0 for pointwise, 1 for depthwise).
         - `final_sum` (output): Array of final sums.
 
-7. **Norm**
+7. **Norm** (removed from latest version)
     - **Description**: Performs normalization on the input data.
     - **Ports**:
         - `data_in` (input): Input data.
