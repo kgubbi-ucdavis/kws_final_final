@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2020 Efabless Corporation
+// SPDX-License-Identifier: 2020 Efabless Corporation
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -33,14 +33,14 @@ module user_project_wrapper #(
     parameter BITS = 32
 ) (
 `ifdef USE_POWER_PINS
-    inout vdda1,	// User area 1 3.3V supply
-    inout vdda2,	// User area 2 3.3V supply
-    inout vssa1,	// User area 1 analog ground
-    inout vssa2,	// User area 2 analog ground
-    inout vccd1,	// User area 1 1.8V supply
-    inout vccd2,	// User area 2 1.8v supply
-    inout vssd1,	// User area 1 digital ground
-    inout vssd2,	// User area 2 digital ground
+    inout vdda1,    // User area 1 3.3V supply
+    inout vdda2,    // User area 2 3.3V supply
+    inout vssa1,    // User area 1 analog ground
+    inout vssa2,    // User area 2 analog ground
+    inout vccd1,    // User area 1 1.8V supply
+    inout vccd2,    // User area 2 1.8v supply
+    inout vssd1,    // User area 1 digital ground
+    inout vssd2,    // User area 2 digital ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
@@ -78,46 +78,48 @@ module user_project_wrapper #(
     output [2:0] user_irq
 );
 
-/*--------------------------------------*/
-/* User project is instantiated  here   */
-/*--------------------------------------*/
+    // Internal wires
+    wire clk;
+    wire reset;
+    wire start;
+    wire [7:0] serial_weight_data;
+    wire serial_weight_valid;
+    wire [7:0] serial_line_data;
+    wire serial_line_valid;
+    wire [7:0] serial_result;
+    wire serial_result_valid;
+    wire done;
 
-user_proj_example mprj (
+    // Assignments for connecting the IOs to the internal signals
+    assign clk = wb_clk_i;
+    assign reset = wb_rst_i;
+    assign start = la_data_in[0];
+    assign serial_weight_data = la_data_in[39:32];
+    assign serial_weight_valid = la_data_in[40];
+    assign serial_line_data = la_data_in[48:41];
+    assign serial_line_valid = la_data_in[49];
+    assign la_data_out[7:0] = serial_result;
+    assign la_data_out[8] = serial_result_valid;
+    assign la_data_out[9] = done;
+
+    // Instantiate the top-level project
+    CNN_Accelerator_Top mprj (
 `ifdef USE_POWER_PINS
-	.vccd1(vccd1),	// User area 1 1.8V power
-	.vssd1(vssd1),	// User area 1 digital ground
+        .vccd1(vccd1),  // User area 1 1.8V power
+        .vssd1(vssd1),  // User area 1 digital ground
 `endif
+        .clk(clk),
+        .reset(reset),
+        .start(start),
+        .serial_weight_data(serial_weight_data),
+        .serial_weight_valid(serial_weight_valid),
+        .serial_line_data(serial_line_data),
+        .serial_line_valid(serial_line_valid),
+        .serial_result(serial_result),
+        .serial_result_valid(serial_result_valid),
+        .done(done)
+    );
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
-
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
-
-    // IO Pads
-
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-    // IRQ
-    .irq(user_irq)
-);
-
-endmodule	// user_project_wrapper
+endmodule   // user_project_wrapper
 
 `default_nettype wire

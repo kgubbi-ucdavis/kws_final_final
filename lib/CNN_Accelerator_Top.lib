@@ -1,0 +1,192 @@
+library (CNN_Accelerator_Top) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.80;
+
+  type ("serial_line_data") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 8;
+    bit_from : 7;
+    bit_to : 0;
+  }
+  type ("serial_result") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 8;
+    bit_from : 7;
+    bit_to : 0;
+  }
+  type ("serial_weight_data") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 8;
+    bit_from : 7;
+    bit_to : 0;
+  }
+
+  cell ("CNN_Accelerator_Top") {
+    pin("clk") {
+      direction : input;
+      capacitance : 0.0082;
+    }
+    pin("done") {
+      direction : output;
+      capacitance : 0.0011;
+    }
+    pin("reset") {
+      direction : input;
+      capacitance : 0.0082;
+    }
+    pin("serial_line_valid") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("serial_result_valid") {
+      direction : output;
+      capacitance : 0.0014;
+    }
+    pin("serial_weight_valid") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("start") {
+      direction : input;
+      capacitance : 0.0057;
+    }
+    bus("serial_line_data") {
+      bus_type : serial_line_data;
+      direction : input;
+      capacitance : 0.0000;
+    pin("serial_line_data[7]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("serial_line_data[6]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("serial_line_data[5]") {
+      direction : input;
+      capacitance : 0.0035;
+    }
+    pin("serial_line_data[4]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("serial_line_data[3]") {
+      direction : input;
+      capacitance : 0.0034;
+    }
+    pin("serial_line_data[2]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    pin("serial_line_data[1]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("serial_line_data[0]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    }
+    bus("serial_result") {
+      bus_type : serial_result;
+      direction : output;
+      capacitance : 0.0000;
+    pin("serial_result[7]") {
+      direction : output;
+      capacitance : 0.0020;
+    }
+    pin("serial_result[6]") {
+      direction : output;
+      capacitance : 0.0017;
+    }
+    pin("serial_result[5]") {
+      direction : output;
+      capacitance : 0.0017;
+    }
+    pin("serial_result[4]") {
+      direction : output;
+      capacitance : 0.0017;
+    }
+    pin("serial_result[3]") {
+      direction : output;
+      capacitance : 0.0016;
+    }
+    pin("serial_result[2]") {
+      direction : output;
+      capacitance : 0.0016;
+    }
+    pin("serial_result[1]") {
+      direction : output;
+      capacitance : 0.0016;
+    }
+    pin("serial_result[0]") {
+      direction : output;
+      capacitance : 0.0013;
+    }
+    }
+    bus("serial_weight_data") {
+      bus_type : serial_weight_data;
+      direction : input;
+      capacitance : 0.0000;
+    pin("serial_weight_data[7]") {
+      direction : input;
+      capacitance : 0.0057;
+    }
+    pin("serial_weight_data[6]") {
+      direction : input;
+      capacitance : 0.0050;
+    }
+    pin("serial_weight_data[5]") {
+      direction : input;
+      capacitance : 0.0050;
+    }
+    pin("serial_weight_data[4]") {
+      direction : input;
+      capacitance : 0.0034;
+    }
+    pin("serial_weight_data[3]") {
+      direction : input;
+      capacitance : 0.0034;
+    }
+    pin("serial_weight_data[2]") {
+      direction : input;
+      capacitance : 0.0034;
+    }
+    pin("serial_weight_data[1]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("serial_weight_data[0]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    }
+  }
+
+}
