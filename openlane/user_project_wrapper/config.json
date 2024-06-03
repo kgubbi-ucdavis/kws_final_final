@@ -28,6 +28,8 @@
     "MAX_TRANSITION_CONSTRAINT": 1.5,
     "RUN_LINTER": 0,
     "QUIT_ON_SYNTH_CHECKS": 0,
+    "PL_RESIZER_HOLD_MAX_BUFFER_PERCENT": 100,
+    "GRT_RESIZER_ALLOW_SETUP_VIOS": 1,
     "FP_PDN_CHECK_NODES": 0,
     "SYNTH_ELABORATE_ONLY": 1,
     "PL_RANDOM_GLB_PLACEMENT": 1,
@@ -42,7 +44,6 @@
     "RUN_TAP_DECAP_INSERTION": 0,
     "FP_PDN_VPITCH": 180,
     "FP_PDN_HPITCH": 180,
-    "RUN_CTS": 0,
     "FP_PDN_VOFFSET": 5,
     "FP_PDN_HOFFSET": 5,
     "MAGIC_ZEROIZE_ORIGIN": 0,
@@ -94,7 +95,7 @@
         },
         "scl::sky130_fd_sc_ls": {
             "CLOCK_PERIOD": 10,
-            "SYNTH_MAX_FANOUT": 5
+            "SYNTH_MAX_FANOUT": 40
         },
         "scl::sky130_fd_sc_ms": {
             "CLOCK_PERIOD": 10

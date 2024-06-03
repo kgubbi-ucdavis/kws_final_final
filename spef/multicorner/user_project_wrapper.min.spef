@@ -1292,643 +1292,681 @@ wbs_sel_i[3] I
 wbs_stb_i I
 wbs_we_i I
 
-*D_NET *144 0.033729
+*D_NET *144 0.0858935
 *CONN
 *P la_data_in[0] I
 *I *646:start I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[0] 0.0161692
-2 *646:start 0.000695239
-3 *144:11 0.0168645
-4 *144:11 *202:19 0
-5 *144:11 *203:19 0
-6 *144:11 *204:19 0
+1 la_data_in[0] 0.000171569
+2 *646:start 0.000620301
+3 *144:9 0.0150134
+4 *144:7 0.0145647
+5 *144:9 *646:serial_line_data[2] 0.000792845
+6 *144:9 *646:serial_line_data[3] 0.00203801
+7 *144:9 *646:serial_line_data[4] 0.00645389
+8 *144:9 *646:serial_weight_data[3] 0.000232225
+9 *144:9 *646:serial_weight_data[5] 0.000724808
+10 *144:9 *646:serial_weight_data[6] 0.013937
+11 *144:9 *646:serial_weight_data[7] 0
+12 *144:9 *646:serial_weight_valid 0.00536737
+13 *144:9 *201:9 0.00131555
+14 *144:9 *202:11 0.00421639
+15 *144:9 *203:11 0.00377544
+16 *144:9 *204:11 0.00750095
+17 *144:9 *206:12 0.000557568
+18 *144:9 *207:9 0.00461657
+19 *144:9 *208:9 0.00125995
+20 *144:9 *210:11 0.000508721
+21 *144:9 *213:11 0.00222625
 *RES
-1 la_data_in[0] *144:11 45.0098 
-2 *144:11 *646:start 12.585 
+1 la_data_in[0] *144:7 1.5875 
+2 *144:7 *144:9 63.1408 
+3 *144:9 *646:start 11.72 
 *END
 
-*D_NET *197 0.0437128
+*D_NET *197 0.120096
 *CONN
 *P la_data_in[32] I
 *I *646:serial_weight_data[0] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[32] 0.00357536
-2 *646:serial_weight_data[0] 0.00357536
-3 *646:serial_weight_data[0] *646:serial_line_data[7] 0.000294183
-4 *646:serial_weight_data[0] *646:serial_weight_valid 0.00817526
-5 *646:serial_weight_data[0] *201:9 0.00448877
-6 *646:serial_weight_data[0] *202:19 0.0150736
-7 *646:serial_weight_data[0] *355:11 0.00361233
-8 *646:serial_weight_data[0] *366:11 0.00330403
-9 *646:serial_weight_data[0] *377:11 0.001614
+1 la_data_in[32] 0.000162093
+2 *646:serial_weight_data[0] 0.000442417
+3 *197:19 0.0103968
+4 *197:9 0.0237545
+5 *197:7 0.0139623
+6 *197:9 la_data_out[2] 0.000224358
+7 *197:9 la_data_out[9] 0.000727025
+8 *197:9 *198:9 0.0426189
+9 *197:19 la_data_out[2] 0.000115117
+10 *197:19 *646:serial_line_data[2] 0.000969698
+11 *197:19 *646:serial_line_valid 1.95991e-05
+12 *197:19 *198:19 0.0267031
 *RES
-1 la_data_in[32] *646:serial_weight_data[0] 36.1952 
+1 la_data_in[32] *197:7 4.22 
+2 *197:7 *197:9 385.47 
+3 *197:9 *197:19 47.9542 
+4 *197:19 *646:serial_weight_data[0] 7.995 
 *END
 
-*D_NET *198 0.0591931
+*D_NET *198 0.168942
 *CONN
 *P la_data_in[33] I
 *I *646:serial_weight_data[1] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[33] 0.00447976
-2 *646:serial_weight_data[1] 6.85e-05
-3 *198:15 0.00454826
-4 *198:15 la_data_out[7] 0
-5 *198:15 *199:9 0.02505
-6 *198:15 *201:9 0.0250466
+1 la_data_in[33] 0.000143474
+2 *646:serial_weight_data[1] 0.000470513
+3 *198:19 0.00453295
+4 *198:9 0.0106823
+5 *198:7 0.00676331
+6 *646:serial_weight_data[1] *646:serial_weight_data[7] 0
+7 *198:9 la_data_out[0] 0.00029219
+8 *198:9 la_data_out[2] 0.00083088
+9 *198:9 la_data_out[9] 0.000758707
+10 *198:9 *199:9 0.046919
+11 *198:19 *646:serial_line_data[2] 0.00115933
+12 *198:19 *646:serial_line_valid 0.00408099
+13 *198:19 *646:serial_weight_data[2] 0.0229859
+14 *197:9 *198:9 0.0426189
+15 *197:19 *198:19 0.0267031
 *RES
-1 la_data_in[33] *198:15 49.5931 
-2 *198:15 *646:serial_weight_data[1] 1.26 
+1 la_data_in[33] *198:7 3.965 
+2 *198:7 *198:9 424.455 
+3 *198:9 *198:19 46.7086 
+4 *198:19 *646:serial_weight_data[1] 8.505 
 *END
 
-*D_NET *199 0.0771272
+*D_NET *199 0.172797
 *CONN
 *P la_data_in[34] I
 *I *646:serial_weight_data[2] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[34] 0.000242179
-2 *646:serial_weight_data[2] 0.000666255
-3 *199:9 0.00598556
-4 *199:7 0.00556149
-5 *199:9 *200:9 0.0342838
-6 *199:9 *201:9 0.00533794
-7 *198:15 *199:9 0.02505
+1 la_data_in[34] 0.000124855
+2 *646:serial_weight_data[2] 0.00376717
+3 *199:9 0.0120645
+4 *199:7 0.00842219
+5 *646:serial_weight_data[2] *646:serial_line_data[2] 0.00481634
+6 *646:serial_weight_data[2] *646:serial_line_data[3] 0.00138689
+7 *646:serial_weight_data[2] *646:serial_weight_data[3] 0.000889355
+8 *646:serial_weight_data[2] *646:serial_weight_data[4] 0.0163189
+9 *646:serial_weight_data[2] *646:serial_weight_data[7] 0.00120772
+10 *646:serial_weight_data[2] *646:serial_weight_valid 0.000110762
+11 *199:9 la_data_out[1] 0.000101314
+12 *199:9 la_data_out[2] 0.00122441
+13 *199:9 la_data_out[9] 0.00102649
+14 *199:9 *646:serial_line_data[2] 0.000525481
+15 *199:9 *200:9 0.00479061
+16 *199:9 *209:9 0.0461155
+17 *198:9 *199:9 0.046919
+18 *198:19 *646:serial_weight_data[2] 0.0229859
 *RES
-1 la_data_in[34] *199:7 2.2775 
-2 *199:7 *199:9 50.73 
-3 *199:9 *646:serial_weight_data[2] 11.375 
+1 la_data_in[34] *199:7 3.71 
+2 *199:7 *199:9 489.66 
+3 *199:9 *646:serial_weight_data[2] 49.9916 
 *END
 
-*D_NET *200 0.101064
+*D_NET *200 0.183241
 *CONN
 *P la_data_in[35] I
 *I *646:serial_weight_data[3] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[35] 0.000117203
-2 *646:serial_weight_data[3] 0.000656406
-3 *200:9 0.0163286
-4 *200:7 0.0157894
-5 *646:serial_weight_data[3] la_data_out[3] 5.69248e-06
-6 *646:serial_weight_data[3] la_data_out[4] 0.000106445
-7 *646:serial_weight_data[3] la_data_out[6] 0
-8 *200:9 la_data_out[5] 0.00207312
-9 *200:9 *201:9 0.00399246
-10 *200:9 *202:11 0.00127988
-11 *200:9 *203:11 0.00117864
-12 *200:9 *204:11 0.00880649
-13 *200:9 *388:11 0.00302375
-14 *200:9 *399:11 0.0134217
-15 *199:9 *200:9 0.0342838
+1 la_data_in[35] 8.76176e-05
+2 *646:serial_weight_data[3] 0.00304367
+3 *200:9 0.0123748
+4 *200:7 0.00941875
+5 *646:serial_weight_data[3] *646:serial_weight_data[4] 0.0185684
+6 *646:serial_weight_data[3] *646:serial_weight_data[5] 0.00846044
+7 *646:serial_weight_data[3] *646:serial_weight_valid 0.0110927
+8 *200:9 la_data_out[1] 0.000119028
+9 *200:9 la_data_out[2] 0.00144198
+10 *200:9 la_data_out[9] 0.00120596
+11 *200:9 *201:9 0.0627708
+12 *200:9 *207:9 0.00113621
+13 *200:9 *209:9 0.0476085
+14 *646:serial_weight_data[2] *646:serial_weight_data[3] 0.000889355
+15 *144:9 *646:serial_weight_data[3] 0.000232225
+16 *199:9 *200:9 0.00479061
 *RES
-1 la_data_in[35] *200:7 1.2425 
-2 *200:7 *200:9 64.7723 
-3 *200:9 *646:serial_weight_data[3] 12.23 
+1 la_data_in[35] *200:7 3.2 
+2 *200:7 *200:9 567.63 
+3 *200:9 *646:serial_weight_data[3] 42.9269 
 *END
 
-*D_NET *201 0.105263
+*D_NET *201 0.193626
 *CONN
 *P la_data_in[36] I
 *I *646:serial_weight_data[4] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[36] 6.29795e-05
-2 *646:serial_weight_data[4] 0.000546026
-3 *201:9 0.0103583
-4 *201:7 0.00987521
-5 *201:9 la_data_out[0] 0.000781699
-6 *201:9 la_data_out[2] 0.00193081
-7 *201:9 la_data_out[3] 0.00434309
-8 *201:9 la_data_out[4] 0.00262895
-9 *201:9 la_data_out[5] 1.78103e-05
-10 *201:9 la_data_out[6] 0.000854082
-11 *201:9 la_data_out[7] 0.0141421
-12 *201:9 *646:serial_weight_valid 0.0142619
-13 *201:9 *202:11 0.000260563
-14 *201:9 *202:19 0.00467344
-15 *201:9 *203:11 0.00019259
-16 *201:9 *377:11 0.00146725
-17 *646:serial_weight_data[0] *201:9 0.00448877
-18 *198:15 *201:9 0.0250466
-19 *199:9 *201:9 0.00533794
-20 *200:9 *201:9 0.00399246
+1 la_data_in[36] 6.89989e-05
+2 *646:serial_weight_data[4] 0.003418
+3 *201:9 0.0125032
+4 *201:7 0.00915422
+5 *646:serial_weight_data[4] *646:serial_weight_data[5] 0.00135162
+6 *646:serial_weight_data[4] *646:serial_weight_data[7] 0.00194333
+7 *201:9 la_data_out[0] 0.000219474
+8 *201:9 la_data_out[1] 0.00253515
+9 *201:9 la_data_out[9] 0.0013075
+10 *201:9 *646:serial_line_data[4] 0.00103695
+11 *201:9 *202:11 0.00053151
+12 *201:9 *206:12 0.0037995
+13 *201:9 *207:9 0.000599134
+14 *201:9 *209:9 0.000871249
+15 *201:9 *210:11 0.0553121
+16 *646:serial_weight_data[2] *646:serial_weight_data[4] 0.0163189
+17 *646:serial_weight_data[3] *646:serial_weight_data[4] 0.0185684
+18 *144:9 *201:9 0.00131555
+19 *200:9 *201:9 0.0627708
 *RES
-1 la_data_in[36] *201:7 1.5725 
-2 *201:7 *201:9 78.4649 
-3 *201:9 *646:serial_weight_data[4] 10.01 
+1 la_data_in[36] *201:7 2.945 
+2 *201:7 *201:9 593.85 
+3 *201:9 *646:serial_weight_data[4] 43.7155 
 *END
 
-*D_NET *202 0.149373
+*D_NET *202 0.208859
 *CONN
 *P la_data_in[37] I
 *I *646:serial_weight_data[5] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[37] 0.000181739
-2 *646:serial_weight_data[5] 0.000455285
-3 *202:19 0.0124352
-4 *202:17 0.0121853
-5 *202:11 0.00278886
-6 *202:9 0.00276521
-7 *202:11 *203:11 0.00803495
-8 *202:11 *377:11 0
-9 *202:19 la_data_out[0] 0.000422527
-10 *202:19 la_data_out[3] 0.00253127
-11 *202:19 la_data_out[6] 0.00766281
-12 *202:19 la_data_out[7] 0.00462099
-13 *202:19 *203:19 0.0466968
-14 *202:19 *272:11 0.00131005
-15 *202:19 *333:11 0.00883042
-16 *202:19 *344:11 0.00852779
-17 *202:19 *355:11 0.00328016
-18 *202:19 *366:11 0.00535636
-19 *646:serial_weight_data[0] *202:19 0.0150736
-20 *144:11 *202:19 0
-21 *200:9 *202:11 0.00127988
-22 *201:9 *202:11 0.000260563
-23 *201:9 *202:19 0.00467344
+1 la_data_in[37] 0.000252228
+2 *646:serial_weight_data[5] 0.00272396
+3 *202:11 0.0145322
+4 *202:9 0.0120605
+5 *646:serial_weight_data[5] *646:serial_weight_data[6] 0.0117016
+6 *646:serial_weight_data[5] *646:serial_weight_data[7] 0.000480081
+7 *202:11 *203:11 0.0767913
+8 *202:11 *206:12 0.000744425
+9 *202:11 *207:9 0.0130051
+10 *202:11 *211:11 0.0612828
+11 *646:serial_weight_data[3] *646:serial_weight_data[5] 0.00846044
+12 *646:serial_weight_data[4] *646:serial_weight_data[5] 0.00135162
+13 *144:9 *646:serial_weight_data[5] 0.000724808
+14 *144:9 *202:11 0.00421639
+15 *201:9 *202:11 0.00053151
 *RES
 1 la_data_in[37] *202:9 3.665 
-2 *202:9 *202:11 72.555 
-3 *202:11 *202:17 5.2825 
-4 *202:17 *202:19 79.6885 
-5 *202:19 *646:serial_weight_data[5] 8.48 
+2 *202:9 *202:11 693.555 
+3 *202:11 *646:serial_weight_data[5] 34.0854 
 *END
 
-*D_NET *203 0.16618
+*D_NET *203 0.22591
 *CONN
 *P la_data_in[38] I
 *I *646:serial_weight_data[6] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[38] 0.000116883
-2 *646:serial_weight_data[6] 0.000439473
-3 *203:19 0.0116069
-4 *203:17 0.0114333
-5 *203:11 0.00401344
-6 *203:9 0.00386445
-7 *203:11 *377:11 0
-8 *203:11 *388:11 0.0166505
-9 *203:19 *204:19 0.0465471
-10 *203:19 *311:11 0.00823595
-11 *203:19 *322:11 0.00716873
-12 *144:11 *203:19 0
-13 *200:9 *203:11 0.00117864
-14 *201:9 *203:11 0.00019259
-15 *202:11 *203:11 0.00803495
-16 *202:19 *203:19 0.0466968
+1 la_data_in[38] 0.000134629
+2 *646:serial_weight_data[6] 0.00305927
+3 *203:11 0.0130318
+4 *203:9 0.0101072
+5 *646:serial_weight_data[6] *646:serial_weight_data[7] 0
+6 *203:11 *204:11 0.00369948
+7 *203:11 *208:9 0.0151104
+8 *203:11 *211:11 0.00102557
+9 *203:11 *213:11 0.0735363
+10 *646:serial_weight_data[5] *646:serial_weight_data[6] 0.0117016
+11 *144:9 *646:serial_weight_data[6] 0.013937
+12 *144:9 *203:11 0.00377544
+13 *202:11 *203:11 0.0767913
 *RES
 1 la_data_in[38] *203:9 2.975 
-2 *203:9 *203:11 150.525 
-3 *203:11 *203:17 6.0475 
-4 *203:17 *203:19 80.446 
-5 *203:19 *646:serial_weight_data[6] 8.315 
+2 *203:9 *203:11 719.775 
+3 *203:11 *646:serial_weight_data[6] 35.8554 
 *END
 
-*D_NET *204 0.146851
+*D_NET *204 0.187244
 *CONN
 *P la_data_in[39] I
 *I *646:serial_weight_data[7] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[39] 0.000107047
-2 *646:serial_weight_data[7] 0.000423661
-3 *204:19 0.0210675
-4 *204:17 0.0210019
-5 *204:11 0.00862133
-6 *204:9 0.00837034
-7 *204:11 *399:11 0.0256664
-8 *204:19 *272:11 0.00623922
-9 *144:11 *204:19 0
-10 *200:9 *204:11 0.00880649
-11 *203:19 *204:19 0.0465471
+1 la_data_in[39] 0.000112351
+2 *646:serial_weight_data[7] 0.006752
+3 *204:11 0.0344229
+4 *204:9 0.0277832
+5 *204:11 *208:9 0.0283564
+6 *204:11 *213:11 0.0749858
+7 *646:serial_weight_data[1] *646:serial_weight_data[7] 0
+8 *646:serial_weight_data[2] *646:serial_weight_data[7] 0.00120772
+9 *646:serial_weight_data[4] *646:serial_weight_data[7] 0.00194333
+10 *646:serial_weight_data[5] *646:serial_weight_data[7] 0.000480081
+11 *646:serial_weight_data[6] *646:serial_weight_data[7] 0
+12 *144:9 *646:serial_weight_data[7] 0
+13 *144:9 *204:11 0.00750095
+14 *203:11 *204:11 0.00369948
 *RES
 1 la_data_in[39] *204:9 2.975 
-2 *204:9 *204:11 231.945 
-3 *204:11 *204:17 7.3225 
-4 *204:17 *204:19 80.2712 
-5 *204:19 *646:serial_weight_data[7] 8.15 
+2 *204:9 *204:11 758.07 
+3 *204:11 *646:serial_weight_data[7] 35.4331 
 *END
 
-*D_NET *206 0.0435613
+*D_NET *206 0.181302
 *CONN
 *P la_data_in[40] I
 *I *646:serial_weight_valid I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[40] 0.00562829
-2 *646:serial_weight_valid 0.00562829
-3 *646:serial_weight_valid *646:serial_line_data[7] 0.00517656
-4 *646:serial_weight_valid *377:11 0.00469099
-5 *646:serial_weight_data[0] *646:serial_weight_valid 0.00817526
-6 *201:9 *646:serial_weight_valid 0.0142619
+1 la_data_in[40] 0.000148905
+2 *646:serial_weight_valid 0.00248253
+3 *206:33 2.02961e-05
+4 *206:12 0.0111717
+5 *206:10 0.00881774
+6 *646:serial_weight_valid *646:serial_line_data[3] 0.00241977
+7 *646:serial_weight_valid *646:serial_line_data[4] 0.00461657
+8 *206:12 la_data_out[0] 0.00330031
+9 *206:12 *646:serial_line_data[3] 0.000325688
+10 *206:12 *207:9 0.00260655
+11 *206:12 *208:9 0.000288873
+12 *206:12 *210:11 0.0611501
+13 *206:12 *211:11 0.00517484
+14 *206:12 *215:11 0.0571055
+15 *646:serial_weight_data[2] *646:serial_weight_valid 0.000110762
+16 *646:serial_weight_data[3] *646:serial_weight_valid 0.0110927
+17 *144:9 *646:serial_weight_valid 0.00536737
+18 *144:9 *206:12 0.000557568
+19 *201:9 *206:12 0.0037995
+20 *202:11 *206:12 0.000744425
 *RES
-1 la_data_in[40] *646:serial_weight_valid 42.7794 
+1 la_data_in[40] *206:10 4.49 
+2 *206:10 *206:12 610.41 
+3 *206:12 *646:serial_weight_valid 33.7375 
+4 la_data_in[40] *206:33 0.225 
 *END
 
-*D_NET *207 0.073718
+*D_NET *207 0.165787
 *CONN
 *P la_data_in[41] I
 *I *646:serial_line_data[0] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[41] 6.29795e-05
-2 *646:serial_line_data[0] 0.000619444
-3 *207:9 0.0125934
-4 *207:7 0.0120369
-5 *207:9 *646:serial_line_data[2] 0.021031
-6 *207:9 *646:serial_line_data[3] 0.0119231
-7 *207:9 *646:serial_line_data[7] 0.0014135
-8 *207:9 *208:11 0.00529088
-9 *207:9 *215:9 0.00326028
-10 *207:9 *355:11 0.00103249
-11 *207:9 *366:11 0.00139689
-12 *207:9 *377:11 0.00305717
+1 la_data_in[41] 0.000171883
+2 *646:serial_line_data[0] 0.000698478
+3 *207:9 0.0194758
+4 *207:7 0.0189492
+5 *207:9 la_data_out[0] 0.0148136
+6 *207:9 la_data_out[9] 0.00262758
+7 *207:9 *646:serial_line_data[2] 0.000158061
+8 *207:9 *208:9 0.0667347
+9 *207:9 *209:9 0.00136271
+10 *207:9 *210:11 0.00215556
+11 *207:9 *211:11 0.0141376
+12 *207:9 *215:11 0.002538
+13 *144:9 *207:9 0.00461657
+14 *200:9 *207:9 0.00113621
+15 *201:9 *207:9 0.000599134
+16 *202:11 *207:9 0.0130051
+17 *206:12 *207:9 0.00260655
 *RES
-1 la_data_in[41] *207:7 1.5725 
-2 *207:7 *207:9 58.6543 
-3 *207:9 *646:serial_line_data[0] 11.045 
+1 la_data_in[41] *207:7 1.9325 
+2 *207:7 *207:9 98.7417 
+3 *207:9 *646:serial_line_data[0] 11.885 
 *END
 
-*D_NET *208 0.064913
+*D_NET *208 0.181889
 *CONN
 *P la_data_in[42] I
 *I *646:serial_line_data[1] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[42] 0.00669903
-2 *646:serial_line_data[1] 0.000644582
-3 *208:11 0.00734361
-4 *208:11 *646:serial_line_data[2] 0.0210444
-5 *208:11 *646:serial_line_data[4] 0.00161348
-6 *208:11 *215:9 0.0196654
-7 *208:11 *388:11 0.00091836
-8 *208:11 *399:11 0.00169322
-9 *207:9 *208:11 0.00529088
+1 la_data_in[42] 8.6669e-05
+2 *646:serial_line_data[1] 0.00079374
+3 *208:9 0.0260726
+4 *208:7 0.0253655
+5 *208:9 *211:11 0.00168025
+6 *208:9 *213:11 0.0161401
+7 *144:9 *208:9 0.00125995
+8 *203:11 *208:9 0.0151104
+9 *204:11 *208:9 0.0283564
+10 *206:12 *208:9 0.000288873
+11 *207:9 *208:9 0.0667347
 *RES
-1 la_data_in[42] *208:11 47.5643 
-2 *208:11 *646:serial_line_data[1] 10.875 
+1 la_data_in[42] *208:7 1.2425 
+2 *208:7 *208:9 104.568 
+3 *208:9 *646:serial_line_data[1] 13.085 
 *END
 
-*D_NET *209 0.0497073
+*D_NET *209 0.150376
 *CONN
 *P la_data_in[43] I
 *I *646:serial_line_data[2] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[43] 0.00381595
-2 *646:serial_line_data[2] 0.00381595
-3 *207:9 *646:serial_line_data[2] 0.021031
-4 *208:11 *646:serial_line_data[2] 0.0210444
+1 la_data_in[43] 9.24903e-05
+2 *646:serial_line_data[2] 0.00290756
+3 *209:9 0.013334
+4 *209:7 0.010519
+5 *646:serial_line_data[2] la_data_out[0] 0.000467904
+6 *646:serial_line_data[2] la_data_out[1] 0.000606525
+7 *646:serial_line_data[2] la_data_out[2] 0.000270685
+8 *646:serial_line_data[2] *646:serial_line_data[3] 0.00665366
+9 *646:serial_line_data[2] *646:serial_line_valid 0.00406006
+10 *209:9 la_data_out[1] 0.000109729
+11 *209:9 la_data_out[2] 0.00156718
+12 *209:9 la_data_out[9] 0.00111174
+13 *209:9 *210:11 0.00429584
+14 *646:serial_weight_data[2] *646:serial_line_data[2] 0.00481634
+15 *144:9 *646:serial_line_data[2] 0.000792845
+16 *197:19 *646:serial_line_data[2] 0.000969698
+17 *198:19 *646:serial_line_data[2] 0.00115933
+18 *199:9 *646:serial_line_data[2] 0.000525481
+19 *199:9 *209:9 0.0461155
+20 *200:9 *209:9 0.0476085
+21 *201:9 *209:9 0.000871249
+22 *207:9 *646:serial_line_data[2] 0.000158061
+23 *207:9 *209:9 0.00136271
 *RES
-1 la_data_in[43] *646:serial_line_data[2] 45.1966 
+1 la_data_in[43] *209:7 3.455 
+2 *209:7 *209:9 536.925 
+3 *209:9 *646:serial_line_data[2] 32.5918 
 *END
 
-*D_NET *210 0.0284781
+*D_NET *210 0.167303
 *CONN
 *P la_data_in[44] I
 *I *646:serial_line_data[3] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[44] 0.00403605
-2 *646:serial_line_data[3] 0.00403605
-3 *646:serial_line_data[3] *646:serial_line_data[7] 0.00259378
-4 *646:serial_line_data[3] *355:11 0.00166181
-5 *646:serial_line_data[3] *366:11 0.00156458
-6 *646:serial_line_data[3] *377:11 0.0026627
-7 *207:9 *646:serial_line_data[3] 0.0119231
+1 la_data_in[44] 0.000215071
+2 *646:serial_line_data[3] 0.00207435
+3 *210:11 0.0111723
+4 *210:9 0.00931299
+5 *646:serial_line_data[3] *646:serial_line_data[4] 0.00107741
+6 *210:11 la_data_out[0] 0.000238075
+7 *210:11 la_data_out[1] 0.0023237
+8 *210:11 la_data_out[9] 0.00119146
+9 *210:11 *215:11 0.00345139
+10 *646:serial_line_data[2] *646:serial_line_data[3] 0.00665366
+11 *646:serial_weight_data[2] *646:serial_line_data[3] 0.00138689
+12 *646:serial_weight_valid *646:serial_line_data[3] 0.00241977
+13 *144:9 *646:serial_line_data[3] 0.00203801
+14 *144:9 *210:11 0.000508721
+15 *201:9 *210:11 0.0553121
+16 *206:12 *646:serial_line_data[3] 0.000325688
+17 *206:12 *210:11 0.0611501
+18 *207:9 *210:11 0.00215556
+19 *209:9 *210:11 0.00429584
 *RES
-1 la_data_in[44] *646:serial_line_data[3] 30.252 
+1 la_data_in[44] *210:9 4.175 
+2 *210:9 *210:11 605.58 
+3 *210:11 *646:serial_line_data[3] 26.5488 
 *END
 
-*D_NET *211 0.00732335
+*D_NET *211 0.187353
 *CONN
 *P la_data_in[45] I
 *I *646:serial_line_data[4] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[45] 0.00194304
-2 *646:serial_line_data[4] 0.00194304
-3 *646:serial_line_data[4] *646:serial_line_data[6] 0
-4 *646:serial_line_data[4] *388:11 0.000643728
-5 *646:serial_line_data[4] *399:11 0.00118007
-6 *208:11 *646:serial_line_data[4] 0.00161348
+1 la_data_in[45] 0.000152964
+2 *646:serial_line_data[4] 0.00147809
+3 *211:11 0.0109807
+4 *211:9 0.00965556
+5 *211:11 *213:11 0.00420499
+6 *211:11 *215:11 0.0643948
+7 *646:serial_line_data[3] *646:serial_line_data[4] 0.00107741
+8 *646:serial_weight_valid *646:serial_line_data[4] 0.00461657
+9 *144:9 *646:serial_line_data[4] 0.00645389
+10 *201:9 *646:serial_line_data[4] 0.00103695
+11 *202:11 *211:11 0.0612828
+12 *203:11 *211:11 0.00102557
+13 *206:12 *211:11 0.00517484
+14 *207:9 *211:11 0.0141376
+15 *208:9 *211:11 0.00168025
 *RES
-1 la_data_in[45] *646:serial_line_data[4] 18.4442 
+1 la_data_in[45] *211:9 3.665 
+2 *211:9 *211:11 660.09 
+3 *211:11 *646:serial_line_data[4] 24.2164 
 *END
 
-*D_NET *212 0.012452
+*D_NET *212 0.119971
 *CONN
 *P la_data_in[46] I
 *I *646:serial_line_data[5] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[46] 0.00308551
-2 *646:serial_line_data[5] 0.00308551
-3 *646:serial_line_data[5] *646:serial_line_data[6] 0.00628095
+1 la_data_in[46] 0.000544728
+2 *646:serial_line_data[5] 3.4696e-05
+3 *212:9 0.0367211
+4 *212:7 0.0372311
+5 *212:9 la_data_out[5] 0.00372223
+6 *212:9 la_data_out[6] 0.00200532
+7 *212:9 la_data_out[7] 0.0109993
+8 *212:9 la_data_out[8] 0
+9 *212:9 *214:9 0.0287124
 *RES
-1 la_data_in[46] *646:serial_line_data[5] 20.8696 
+1 la_data_in[46] *212:7 10.2425 
+2 *212:7 *212:9 126.914 
+3 *212:9 *646:serial_line_data[5] 1.0625 
 *END
 
-*D_NET *213 0.0236622
+*D_NET *213 0.200442
 *CONN
 *P la_data_in[47] I
 *I *646:serial_line_data[6] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[47] 0.00869062
-2 *646:serial_line_data[6] 0.00869062
-3 *646:serial_line_data[4] *646:serial_line_data[6] 0
-4 *646:serial_line_data[5] *646:serial_line_data[6] 0.00628095
+1 la_data_in[47] 6.3809e-05
+2 *646:serial_line_data[6] 0.000741998
+3 *213:11 0.014087
+4 *213:9 0.0134088
+5 *213:11 *215:11 0.00104691
+6 *144:9 *213:11 0.00222625
+7 *203:11 *213:11 0.0735363
+8 *204:11 *213:11 0.0749858
+9 *208:9 *213:11 0.0161401
+10 *211:11 *213:11 0.00420499
 *RES
-1 la_data_in[47] *646:serial_line_data[6] 34.5098 
+1 la_data_in[47] *213:9 2.975 
+2 *213:9 *213:11 782.565 
+3 *213:11 *646:serial_line_data[6] 14.4575 
 *END
 
-*D_NET *214 0.0588297
+*D_NET *214 0.123313
 *CONN
 *P la_data_in[48] I
 *I *646:serial_line_data[7] I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[48] 0.0111543
-2 *646:serial_line_data[7] 0.0111543
-3 *646:serial_line_data[7] *272:11 0.00524504
-4 *646:serial_line_data[7] *311:11 0.00568667
-5 *646:serial_line_data[7] *322:11 0.00521235
-6 *646:serial_line_data[7] *333:11 0.00521233
-7 *646:serial_line_data[7] *344:11 0.00568665
-8 *646:serial_line_data[3] *646:serial_line_data[7] 0.00259378
-9 *646:serial_weight_data[0] *646:serial_line_data[7] 0.000294183
-10 *646:serial_weight_valid *646:serial_line_data[7] 0.00517656
-11 *207:9 *646:serial_line_data[7] 0.0014135
+1 la_data_in[48] 0.000627907
+2 *646:serial_line_data[7] 0
+3 *214:9 0.0429778
+4 *214:7 0.0436057
+5 *214:9 la_data_out[6] 0.00738973
+6 *212:9 *214:9 0.0287124
 *RES
-1 la_data_in[48] *646:serial_line_data[7] 49.3052 
+1 la_data_in[48] *214:7 11.7725 
+2 *214:7 *214:9 138.043 
+3 *214:9 *646:serial_line_data[7] 0.5 
 *END
 
-*D_NET *215 0.0531855
+*D_NET *215 0.164246
 *CONN
 *P la_data_in[49] I
 *I *646:serial_line_valid I *D CNN_Accelerator_Top
 *CAP
-1 la_data_in[49] 0.000157187
-2 *646:serial_line_valid 0.000704545
-3 *215:9 0.0149727
-4 *215:7 0.0144254
-5 *207:9 *215:9 0.00326028
-6 *208:11 *215:9 0.0196654
+1 la_data_in[49] 7.81834e-05
+2 *646:serial_line_valid 0.00123347
+3 *215:11 0.0123019
+4 *215:9 0.0111466
+5 *646:serial_line_valid la_data_out[1] 0
+6 *215:11 la_data_out[0] 0.00278845
+7 *646:serial_line_data[2] *646:serial_line_valid 0.00406006
+8 *197:19 *646:serial_line_valid 1.95991e-05
+9 *198:19 *646:serial_line_valid 0.00408099
+10 *206:12 *215:11 0.0571055
+11 *207:9 *215:11 0.002538
+12 *210:11 *215:11 0.00345139
+13 *211:11 *215:11 0.0643948
+14 *213:11 *215:11 0.00104691
 *RES
-1 la_data_in[49] *215:7 1.9325 
-2 *215:7 *215:9 51.8371 
-3 *215:9 *646:serial_line_valid 12.575 
+1 la_data_in[49] *215:9 2.975 
+2 *215:9 *215:11 637.665 
+3 *215:11 *646:serial_line_valid 20.5237 
 *END
 
-*D_NET *272 0.282572
+*D_NET *272 0.0416214
 *CONN
 *P la_data_out[0] O
 *I *646:serial_result[0] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[0] 0.00173253
-2 *646:serial_result[0] 0.000434713
-3 *272:11 0.0555904
-4 *272:9 0.0542925
-5 la_data_out[0] la_data_out[1] 0.00272778
-6 la_data_out[0] la_data_out[2] 0.00143405
-7 la_data_out[0] la_data_out[3] 0
-8 *272:11 *311:11 0.152361
-9 *646:serial_line_data[7] *272:11 0.00524504
-10 *201:9 la_data_out[0] 0.000781699
-11 *202:19 la_data_out[0] 0.000422527
-12 *202:19 *272:11 0.00131005
-13 *204:19 *272:11 0.00623922
+1 la_data_out[0] 0.00364117
+2 *646:serial_result[0] 0.00364117
+3 la_data_out[0] la_data_out[1] 0.0111872
+4 la_data_out[0] la_data_out[9] 0.00103186
+5 *646:serial_line_data[2] la_data_out[0] 0.000467904
+6 *198:9 la_data_out[0] 0.00029219
+7 *201:9 la_data_out[0] 0.000219474
+8 *206:12 la_data_out[0] 0.00330031
+9 *207:9 la_data_out[0] 0.0148136
+10 *210:11 la_data_out[0] 0.000238075
+11 *215:11 la_data_out[0] 0.00278845
 *RES
-1 *646:serial_result[0] *272:9 9.8675 
-2 *272:9 *272:11 1458.07 
-3 *272:11 la_data_out[0] 15.2833 
+1 *646:serial_result[0] la_data_out[0] 37.5038 
 *END
 
-*D_NET *311 0.358541
+*D_NET *311 0.0304016
 *CONN
 *P la_data_out[1] O
 *I *646:serial_result[1] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[1] 0.00189411
-2 *646:serial_result[1] 0.000453332
-3 *311:11 0.022177
-4 *311:9 0.0207362
-5 la_data_out[1] la_data_out[2] 0.000890026
-6 la_data_out[1] la_data_out[4] 0
-7 *311:11 *322:11 0.143378
-8 la_data_out[0] la_data_out[1] 0.00272778
-9 *646:serial_line_data[7] *311:11 0.00568667
-10 *203:19 *311:11 0.00823595
-11 *272:11 *311:11 0.152361
+1 la_data_out[1] 0.00303067
+2 *646:serial_result[1] 0.00303067
+3 la_data_out[1] la_data_out[2] 0.00735765
+4 la_data_out[0] la_data_out[1] 0.0111872
+5 *646:serial_line_data[2] la_data_out[1] 0.000606525
+6 *646:serial_line_valid la_data_out[1] 0
+7 *199:9 la_data_out[1] 0.000101314
+8 *200:9 la_data_out[1] 0.000119028
+9 *201:9 la_data_out[1] 0.00253515
+10 *209:9 la_data_out[1] 0.000109729
+11 *210:11 la_data_out[1] 0.0023237
 *RES
-1 *646:serial_result[1] *311:9 10.1225 
-2 *311:9 *311:11 1377.34 
-3 *311:11 la_data_out[1] 15.2725 
+1 *646:serial_result[1] la_data_out[1] 30.03 
 *END
 
-*D_NET *322 0.337852
+*D_NET *322 0.0192989
 *CONN
 *P la_data_out[2] O
 *I *646:serial_result[2] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[2] 0.00140909
-2 *646:serial_result[2] 0.000453194
-3 *322:11 0.0205939
-4 *322:9 0.019638
-5 la_data_out[2] la_data_out[4] 0.00121875
-6 *322:11 *333:11 0.134525
-7 la_data_out[0] la_data_out[2] 0.00143405
-8 la_data_out[1] la_data_out[2] 0.000890026
-9 *646:serial_line_data[7] *322:11 0.00521235
-10 *201:9 la_data_out[2] 0.00193081
-11 *203:19 *322:11 0.00716873
-12 *311:11 *322:11 0.143378
+1 la_data_out[2] 0.00313332
+2 *646:serial_result[2] 0.00313332
+3 la_data_out[2] la_data_out[3] 0
+4 la_data_out[2] la_data_out[7] 0
+5 la_data_out[1] la_data_out[2] 0.00735765
+6 *646:serial_line_data[2] la_data_out[2] 0.000270685
+7 *197:9 la_data_out[2] 0.000224358
+8 *197:19 la_data_out[2] 0.000115117
+9 *198:9 la_data_out[2] 0.00083088
+10 *199:9 la_data_out[2] 0.00122441
+11 *200:9 la_data_out[2] 0.00144198
+12 *209:9 la_data_out[2] 0.00156718
 *RES
-1 *646:serial_result[2] *322:9 10.0325 
-2 *322:9 *322:11 1296.27 
-3 *322:11 la_data_out[2] 13.7154 
+1 *646:serial_result[2] la_data_out[2] 23.4931 
 *END
 
-*D_NET *333 0.320967
+*D_NET *333 0.00536378
 *CONN
 *P la_data_out[3] O
 *I *646:serial_result[3] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[3] 0.000856159
-2 *646:serial_result[3] 0.000490569
-3 *333:11 0.0186951
-4 *333:9 0.0183295
-5 la_data_out[3] la_data_out[4] 0.000107794
-6 *333:11 *344:11 0.12704
-7 la_data_out[0] la_data_out[3] 0
-8 *646:serial_line_data[7] *333:11 0.00521233
-9 *646:serial_weight_data[3] la_data_out[3] 5.69248e-06
-10 *201:9 la_data_out[3] 0.00434309
-11 *202:19 la_data_out[3] 0.00253127
-12 *202:19 *333:11 0.00883042
-13 *322:11 *333:11 0.134525
+1 la_data_out[3] 0.00268189
+2 *646:serial_result[3] 0.00268189
+3 la_data_out[3] la_data_out[7] 0
+4 la_data_out[2] la_data_out[3] 0
 *RES
-1 *646:serial_result[3] *333:9 10.6325 
-2 *333:9 *333:11 1216.23 
-3 *333:11 la_data_out[3] 12.4791 
+1 *646:serial_result[3] la_data_out[3] 17.0976 
 *END
 
-*D_NET *344 0.300452
+*D_NET *344 0.00135017
 *CONN
 *P la_data_out[4] O
 *I *646:serial_result[4] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[4] 0.000704623
-2 *646:serial_result[4] 0.000490432
-3 *344:11 0.0180469
-4 *344:9 0.0178327
-5 la_data_out[4] la_data_out[5] 0.000513898
-6 *344:11 *355:11 0.117546
-7 la_data_out[1] la_data_out[4] 0
-8 la_data_out[2] la_data_out[4] 0.00121875
-9 la_data_out[3] la_data_out[4] 0.000107794
-10 *646:serial_line_data[7] *344:11 0.00568665
-11 *646:serial_weight_data[3] la_data_out[4] 0.000106445
-12 *201:9 la_data_out[4] 0.00262895
-13 *202:19 *344:11 0.00852779
-14 *333:11 *344:11 0.12704
+1 la_data_out[4] 0.000675084
+2 *646:serial_result[4] 0.000675084
 *RES
-1 *646:serial_result[4] *344:9 10.5425 
-2 *344:9 *344:11 1148.61 
-3 *344:11 la_data_out[4] 11.5486 
+1 *646:serial_result[4] la_data_out[4] 10.8225 
 *END
 
-*D_NET *355 0.27475
+*D_NET *355 0.0100394
 *CONN
 *P la_data_out[5] O
 *I *646:serial_result[5] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[5] 0.00155903
-2 *646:serial_result[5] 0.000490295
-3 *355:11 0.0184593
-4 *355:9 0.0173906
-5 la_data_out[5] la_data_out[7] 0
-6 *355:11 la_data_out[6] 0.00261824
-7 *355:11 *366:11 0.104495
-8 la_data_out[4] la_data_out[5] 0.000513898
-9 *646:serial_line_data[3] *355:11 0.00166181
-10 *646:serial_weight_data[0] *355:11 0.00361233
-11 *200:9 la_data_out[5] 0.00207312
-12 *201:9 la_data_out[5] 1.78103e-05
-13 *202:19 *355:11 0.00328016
-14 *207:9 *355:11 0.00103249
-15 *344:11 *355:11 0.117546
+1 la_data_out[5] 0.00129746
+2 *646:serial_result[5] 0.00129746
+3 la_data_out[5] la_data_out[6] 0.00372223
+4 *212:9 la_data_out[5] 0.00372223
 *RES
-1 *646:serial_result[5] *355:9 10.4525 
-2 *355:9 *355:11 1062.7 
-3 *355:11 la_data_out[5] 12.2807 
+1 *646:serial_result[5] la_data_out[5] 16.9132 
 *END
 
-*D_NET *366 0.258021
+*D_NET *366 0.0173951
 *CONN
 *P la_data_out[6] O
 *I *646:serial_result[6] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[6] 0.00144189
-2 *646:serial_result[6] 0.000490158
-3 *366:11 0.0172094
-4 *366:9 0.0162576
-5 la_data_out[6] la_data_out[7] 0.00617215
-6 *366:11 *377:11 0.089198
-7 *646:serial_line_data[3] *366:11 0.00156458
-8 *646:serial_weight_data[0] *366:11 0.00330403
-9 *646:serial_weight_data[3] la_data_out[6] 0
-10 *201:9 la_data_out[6] 0.000854082
-11 *202:19 la_data_out[6] 0.00766281
-12 *202:19 *366:11 0.00535636
-13 *207:9 *366:11 0.00139689
-14 *355:11 la_data_out[6] 0.00261824
-15 *355:11 *366:11 0.104495
+1 la_data_out[6] 0.00213892
+2 *646:serial_result[6] 0.00213892
+3 la_data_out[5] la_data_out[6] 0.00372223
+4 *212:9 la_data_out[6] 0.00200532
+5 *214:9 la_data_out[6] 0.00738973
 *RES
-1 *646:serial_result[6] *366:9 10.3625 
-2 *366:9 *366:11 944.715 
-3 *366:11 la_data_out[6] 16.725 
+1 *646:serial_result[6] la_data_out[6] 23.0168 
 *END
 
-*D_NET *377 0.191222
+*D_NET *377 0.0208749
 *CONN
 *P la_data_out[7] O
 *I *646:serial_result[7] O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[7] 0.00246963
-2 *646:serial_result[7] 0.000565044
-3 *377:11 0.0312333
-4 *377:9 0.0293287
-5 *377:11 *388:11 0
-6 la_data_out[5] la_data_out[7] 0
-7 la_data_out[6] la_data_out[7] 0.00617215
-8 *646:serial_line_data[3] *377:11 0.0026627
-9 *646:serial_weight_data[0] *377:11 0.001614
-10 *646:serial_weight_valid *377:11 0.00469099
-11 *198:15 la_data_out[7] 0
-12 *201:9 la_data_out[7] 0.0141421
-13 *201:9 *377:11 0.00146725
-14 *202:11 *377:11 0
-15 *202:19 la_data_out[7] 0.00462099
-16 *203:11 *377:11 0
-17 *207:9 *377:11 0.00305717
-18 *366:11 *377:11 0.089198
+1 la_data_out[7] 0.00493783
+2 *646:serial_result[7] 0.00493783
+3 la_data_out[2] la_data_out[7] 0
+4 la_data_out[3] la_data_out[7] 0
+5 *212:9 la_data_out[7] 0.0109993
 *RES
-1 *646:serial_result[7] *377:9 11.6525 
-2 *377:9 *377:11 806.37 
-3 *377:11 la_data_out[7] 26.0257 
+1 *646:serial_result[7] la_data_out[7] 28.0947 
 *END
 
-*D_NET *388 0.28009
+*D_NET *388 0.00708683
 *CONN
 *P la_data_out[8] O
 *I *646:serial_result_valid O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[8] 9.76491e-05
-2 *646:serial_result_valid 0.00067349
-3 *388:11 0.0489027
-4 *388:9 0.0494785
-5 *388:11 *399:11 0.159701
-6 *646:serial_line_data[4] *388:11 0.000643728
-7 *200:9 *388:11 0.00302375
-8 *203:11 *388:11 0.0166505
-9 *208:11 *388:11 0.00091836
-10 *377:11 *388:11 0
+1 la_data_out[8] 0.00354341
+2 *646:serial_result_valid 0.00354341
+3 *212:9 la_data_out[8] 0
 *RES
-1 *646:serial_result_valid *388:9 14.2025 
-2 *388:9 *388:11 1456.35 
-3 *388:11 la_data_out[8] 3.665 
+1 *646:serial_result_valid la_data_out[8] 19.9971 
 *END
 
-*D_NET *399 0.303565
+*D_NET *399 0.0175649
 *CONN
 *P la_data_out[9] O
 *I *646:done O *D CNN_Accelerator_Top
 *CAP
-1 la_data_out[9] 0.000117563
-2 *646:done 0.00066878
-3 *399:11 0.0502825
-4 *399:9 0.0508337
-5 *646:serial_line_data[4] *399:11 0.00118007
-6 *200:9 *399:11 0.0134217
-7 *204:11 *399:11 0.0256664
-8 *208:11 *399:11 0.00169322
-9 *388:11 *399:11 0.159701
+1 la_data_out[9] 0.00328827
+2 *646:done 0.00328827
+3 la_data_out[0] la_data_out[9] 0.00103186
+4 *197:9 la_data_out[9] 0.000727025
+5 *198:9 la_data_out[9] 0.000758707
+6 *199:9 la_data_out[9] 0.00102649
+7 *200:9 la_data_out[9] 0.00120596
+8 *201:9 la_data_out[9] 0.0013075
+9 *207:9 la_data_out[9] 0.00262758
+10 *209:9 la_data_out[9] 0.00111174
+11 *210:11 la_data_out[9] 0.00119146
 *RES
-1 *646:done *399:9 14.1125 
-2 *399:9 *399:11 1511.2 
-3 *399:11 la_data_out[9] 3.665 
+1 *646:done la_data_out[9] 21.7826 
 *END
 
-*D_NET *540 0.0166959
+*D_NET *540 0.00880935
 *CONN
 *P wb_clk_i I
 *I *646:clk I *D CNN_Accelerator_Top
 *CAP
-1 wb_clk_i 0.00415409
-2 *646:clk 0.00415409
-3 *646:clk *646:reset 0.00838772
+1 wb_clk_i 0.00440468
+2 *646:clk 0.00440468
 *RES
-1 wb_clk_i *646:clk 27.5338 
+1 wb_clk_i *646:clk 20.584 
 *END
 
-*D_NET *541 0.0245865
+*D_NET *541 0.0106908
 *CONN
 *P wb_rst_i I
 *I *646:reset I *D CNN_Accelerator_Top
 *CAP
-1 wb_rst_i 0.00809938
-2 *646:reset 0.00809938
-3 *646:clk *646:reset 0.00838772
+1 wb_rst_i 0.0053454
+2 *646:reset 0.0053454
 *RES
-1 wb_rst_i *646:reset 37.7448 
+1 wb_rst_i *646:reset 26.1936 
 *END
