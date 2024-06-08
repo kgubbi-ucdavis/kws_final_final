@@ -1,8 +1,8 @@
-CARAVEL_ROOT: /home/kgubbi/kws_final_final/caravel
-MCW_ROOT: /home/kgubbi/kws_final_final/mgmt_core_wrapper
+CARAVEL_ROOT: /home/designer-01/projects/kws_final_final/caravel
+MCW_ROOT: /home/designer-01/projects/kws_final_final/mgmt_core_wrapper
 PDK: sky130A
-PDK_ROOT: /home/kgubbi/kws_final_final/dependencies/pdks
-USER_PROJECT_ROOT: /home/kgubbi/kws_final_final
+PDK_ROOT: /home/designer-01/projects/kws_final_final/dependencies/pdks
+USER_PROJECT_ROOT: /home/designer-01/projects/kws_final_final
 caravan: false
 clk: 25
 emailto:

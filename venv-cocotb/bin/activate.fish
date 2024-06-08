@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/kgubbi/kws_final_final/venv-cocotb"
+set -gx VIRTUAL_ENV "/home/designer-01/projects/kws_final_final/venv-cocotb"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

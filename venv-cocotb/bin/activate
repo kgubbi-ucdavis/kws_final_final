@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/kgubbi/kws_final_final/venv-cocotb"
+VIRTUAL_ENV="/home/designer-01/projects/kws_final_final/venv-cocotb"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
