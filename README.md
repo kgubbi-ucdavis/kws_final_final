@@ -131,9 +131,9 @@ This project implements a Convolutional Neural Network (CNN) accelerator on an A
 This README file provides an overview of the project, descriptions of each module, the file structure, and a sample testbench for verification. You can paste this directly into your GitHub repository's README.md file.
 
 
-### Use of Generative AI (ChatGPT-4) in the CNN Accelerator Project
+### Use of Generative AI (ChatGPT-4o) in the CNN Accelerator Project
 
-Generative AI, specifically ChatGPT-4, played a pivotal role in the design, verification, development, and debugging of the CNN Accelerator Project. Leveraging the capabilities of ChatGPT-4 provided several advantages, including accelerating the development process, ensuring accuracy, and enhancing the overall efficiency of the project.
+Generative AI, specifically ChatGPT-4o, played a pivotal role in the design, verification, development, and debugging of the CNN Accelerator Project. Leveraging the capabilities of ChatGPT-4o provided several advantages, including accelerating the development process, ensuring accuracy, and enhancing the overall efficiency of the project.
 
 #### How Generative AI Was Used
 
@@ -143,7 +143,7 @@ Generative AI, specifically ChatGPT-4, played a pivotal role in the design, veri
     - **Code Generation**: Generated Verilog code snippets for various modules, reducing the manual coding effort and minimizing errors.
 
 2. **Verification**
-    - **Testbench Generation**: ChatGPT-4 helped in generating testbenches for verifying the functionality of individual modules and the entire system.
+    - **Testbench Generation**: ChatGPT-4o helped in generating testbenches for verifying the functionality of individual modules and the entire system.
     - **Simulation Guidance**: Provided guidance on running simulations and interpreting results, ensuring that the design met the expected performance and functionality.
 
 3. **Debugging and Fixing Code**
@@ -168,6 +168,16 @@ To maximize the benefits of Generative AI in hardware design and development, co
 
 5. **Continuous Learning and Adaptation**
     - Stay updated with the latest advancements in Generative AI and adapt your workflows to incorporate new features and capabilities. This ensures that you are leveraging the full potential of AI in your projects.
+
+
+
+#### LLM Prompts
+**Here are links to the LLM prompts used:**
+1. https://chatgpt.com/share/2d83003a-d89c-4c51-b621-21c019887bba
+2. https://chatgpt.com/share/0d9e5304-852a-4111-8c18-36d806c00873
+3. https://chatgpt.com/share/eafa079e-de3f-4ab4-b920-8bee9161d13c
+
+
 
 #### Example Workflow
 
